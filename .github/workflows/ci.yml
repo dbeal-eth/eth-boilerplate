@@ -1,0 +1,22 @@
+name: Main Workflow
+
+on:
+  push:
+
+jobs:
+  test:
+    name: build
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+      - uses: actions/checkout@v2
+      - name: install deps
+        run: |
+          npm i -g lerna
+          lerna bootstrap
+      - name: build
+        run: lerna run build
+      - name: test
+        run: lerna run test

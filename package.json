@@ -1,0 +1,28 @@
+{
+  "name": "streamtrade",
+  "private": true,
+  "description": "streaming exchange app for continuous buy/sell",
+  "contributors": [
+    {
+      "name": "Daniel Beal",
+      "email": "git@danb.email"
+    },
+    {
+      "name": "Matthew Conover",
+      "email": "git@mconover.dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KillerByte/streamtrade.git"
+  },
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.20.1",
+    "lerna": "^4.0.0",
+    "prettier": "^2.3.1"
+  },
+  "bugs": {
+    "url": "https://github.com/KillerByte/streamtrade/issues"
+  }
+}
